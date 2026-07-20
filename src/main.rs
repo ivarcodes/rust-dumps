@@ -1,5 +1,5 @@
 use std::io;
-use rand:: RngExt;
+
 fn main() {
     
  
@@ -47,7 +47,8 @@ fn main() {
 
     // let name = String::from("codeGuy");
     // greet(name);
-    guess_number();
+    // guess_number();
+    cal();
               
 
 }
@@ -68,30 +69,52 @@ fn main() {
 // fn greet(person:&String){
 //     println!("Hi {} welcome",person) };
 
-fn guess_number (){
-    println!("guess number between 1 and 100!");
-    let secret: i32 = rand::rng().random_range(1..=100);
-    loop{
-    let mut input:String = String::new();
-    io::stdin().read_line( &mut input).expect("number");
-    let guess:i32 = input.trim().parse().expect("number to found!");
-    println!("you guessed {}",guess);
-    if guess<secret{
-        println!("too low");
-    }else if guess>secret{
-        print!("too high");
-    }else{
-        print!("won!!!");
-        break;
+// fn guess_number (){
+//     println!("guess number between 1 and 100!");
+//     let secret: i32 = rand::rng().random_range(1..=100);
+//     loop{
+//     let mut input:String = String::new();
+//     io::stdin().read_line( &mut input).expect("number");
+//     let guess:i32 = input.trim().parse().expect("number to found!");
+//     println!("you guessed {}",guess);
+//     if guess<secret{
+//         println!("too low");
+//     }else if guess>secret{
+//         print!("too high");
+//     }else{
+//         print!("won!!!");
+//         break;
+//     }
+//     }
+
+
+
+
+// }
+
+
+
+fn cal(){
+    println!("Enter first number:");
+    let mut number1 = String::new();
+    io::stdin().read_line(&mut number1).expect("number1");
+
+    println!("Choose operation: 1) +  2) -  3) *  4) /");
+    let mut choice = String::new();
+    io::stdin().read_line(&mut choice).expect("operation");
+
+    println!("Enter second number:");
+    let mut number2 = String::new();
+    io::stdin().read_line(&mut number2).expect("number2");
+    let n1:i32 = number1.trim().parse().expect("number 1");
+    let n2:i32 = number2.trim().parse().expect("number 2");
+    
+    match choice.trim() {
+        "1" =>println!("{}",n1+n2),
+        "2" => println!("{}",n1-n2),
+        "3" => println!("{}",n1*n2),
+        "4" => println!("{}",n1/n2),
+        _ => println!("Invalid operation"),
     }
-    }
-
-
-
-
 }
-
-
-
-
 
