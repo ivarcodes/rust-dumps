@@ -1,5 +1,5 @@
-use std::io;
-
+use std::io::{self, stdin};
+#[warn(unused_must_use)]
 fn main() {
     
  
@@ -48,7 +48,8 @@ fn main() {
     // let name = String::from("codeGuy");
     // greet(name);
     // guess_number();
-    cal();
+    // cal();
+    play_quiz();
               
 
 }
@@ -99,7 +100,7 @@ fn cal(){
     let mut number1 = String::new();
     io::stdin().read_line(&mut number1).expect("number1");
 
-    println!("Choose operation: 1) +  2) -  3) *  4) /");
+    println!("Choose operation: 1) +  2) -  3) *  4) ");
     let mut choice = String::new();
     io::stdin().read_line(&mut choice).expect("operation");
 
@@ -118,3 +119,21 @@ fn cal(){
     }
 }
 
+fn play_quiz (){
+    //storing questions and answers
+let questions = vec!["what is cpu","what is ram","what is rom"];
+let ans =vec!["central processing unit","random access memory","read only memory"];
+    let mut score:i32 = 0;
+    // asking questions
+    for i in 0..questions.len(){
+       
+        println!("{}",questions[i]);
+        let mut user = String::new();
+        io::stdin().read_line(&mut user).expect("answer");
+        if user.trim().to_lowercase()==ans[i].to_lowercase(){
+            score += 1;
+        }
+
+    }
+    println!("Your final score: {}", score);
+}
