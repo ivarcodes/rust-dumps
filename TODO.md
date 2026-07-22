@@ -16,11 +16,11 @@
 - [x] Quiz Game
 
 ## Next Topics to Learn
-- [ ] Strings vs &str (deep dive)
-- [ ] HashMaps (key-value pairs)
-- [ ] Error handling (Result, Option, unwrap vs expect)
-- [ ] Structs (custom data types)
-- [ ] Enums & pattern matching
+- [x] Strings vs &str (deep dive)
+- [x] HashMaps (key-value pairs)
+- [x] Error handling (Result, Option, unwrap vs expect)
+- [x] Structs (custom data types)
+- [x] Enums & pattern matching
 - [ ] Traits (like interfaces in other languages)
 - [ ] Lifetimes (the scary one)
 - [ ] File I/O (read/write files)
@@ -28,7 +28,7 @@
 
 ## Next Projects to Build
 - [ ] Todo List (terminal CRUD - create, read, update, delete)
-- [ ] Student Record System (store names + grades using HashMap)
+- [x] Student Record System (store names + grades using HashMap)
 - [ ] File Reader (count words/lines in a text file)
 - [ ] Rock Paper Scissors (play against computer)
 - [ ] Expense Tracker (track spending with categories)
