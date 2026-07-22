@@ -21,14 +21,30 @@
 - [x] Error handling (Result, Option, unwrap vs expect)
 - [x] Structs (custom data types)
 - [x] Enums & pattern matching
-- [ ] Traits (like interfaces in other languages)
-- [ ] Lifetimes (the scary one)
-- [ ] File I/O (read/write files)
-- [ ] Modules & project organization
 
 ## Next Projects to Build
 - [ ] Todo List (terminal CRUD - create, read, update, delete)
 - [x] Student Record System (store names + grades using HashMap)
-- [ ] File Reader (count words/lines in a text file)
-- [ ] Rock Paper Scissors (play against computer)
-- [ ] Expense Tracker (track spending with categories)
+
+## 1-Month Roadmap (Jul 23 – Aug 23)
+
+### Week 1 — Traits + Todo List
+- [ ] Learn traits (impl, derive, trait bounds)
+- [ ] Build **Todo List** CLI (CRUD, save/load with JSON)
+
+### Week 2 — File I/O + File Reader
+- [ ] Learn File I/O (read/write/append)
+- [ ] Build **File Reader** (count words, lines, chars in a .txt)
+
+### Week 3 — Modules + Rock Paper Scissors
+- [ ] Learn modules & project organization (mod, pub, use)
+- [ ] Build **Rock Paper Scissors** (multiple files, random AI)
+
+### Week 4 — Lifetimes + Expense Tracker
+- [ ] Learn lifetimes (elision, struct lifetimes, 'a)
+- [ ] Build **Expense Tracker** (categories, total, file persistence)
+
+### Stretch Goals (if ahead)
+- [ ] Generics
+- [ ] Closures & iterators
+- [ ] Build a simple CLI tool with clap crate
