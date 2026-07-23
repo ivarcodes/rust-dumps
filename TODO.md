@@ -29,7 +29,11 @@
 ## 1-Month Roadmap (Jul 23 – Aug 23)
 
 ### Week 1 — Traits + Todo List
-- [ ] Learn traits (impl, derive, trait bounds)
+- [x] impl (implementing traits on structs)
+- [x] derive (Debug, Clone, PartialEq)
+- [ ] trait bounds (generics with trait constraints)
+- [ ] default methods
+- [ ] dyn vs generics basics
 - [ ] Build **Todo List** CLI (CRUD, save/load with JSON)
 
 ### Week 2 — File I/O + File Reader
