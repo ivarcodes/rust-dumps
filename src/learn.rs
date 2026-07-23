@@ -72,7 +72,7 @@ pub fn run() {
 
     // let name1:&str = "hello";
 
-  
+   
 
 //     fn  say_hello(name:&str){
 //         print!("{}",name);
@@ -104,6 +104,38 @@ pub fn run() {
 // println!("{}",n);
 
 
+// trait Vehicle {
+//     fn top_sepeed(&self)->u32;
+//     fn vehicle_type(&self)->&str;
+// }
+
+// struct Bike {
+//     name: String,
+//     speed: u32,
+//     model_name: String,
+// }
+
+// impl Vehicle for Bike {
+//     fn top_sepeed(&self) -> u32 {
+//         self.speed
+//     }
+//     fn vehicle_type(&self) -> &str {
+//         &self.name
+//     }
+// }
+#[derive(Debug,Clone,PartialEq)]
+struct Bike {
+    name:String,
+    speed:u32,
+    model_name:String,
+}
+let bike = Bike {
+    name:"kawaski".into(),
+    speed:250,
+    model_name:"ninja".into()
+};
+let bike2 = bike.clone();
+println!("{:?}",bike);
+println!("{:?}",bike2);
 
 }
-
